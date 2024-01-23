@@ -7,7 +7,7 @@ public class FileOutputStreamDemo {
 
         //file1.txt contains every other byte from the sample.
         OutputStream f0 = new FileOutputStream("file1.txt");
-        for(int i=0; i< buffer.length; i++){
+        for(int i=0; i< buffer.length; i = i+2){
             f0.write(buffer[i]);
         }
         f0.close();
